@@ -12,7 +12,7 @@ The example code relies on a running Kafka service and the consumer and the prod
 
 _Note:_ The instructions are focused on Ubuntu however other environments will be supported with a bit of googling.
 
-## Environment Setup
+## Project Setup
 
 Follow the instructions below to configure your local machine to run and develop this example Python application. 
 
@@ -34,7 +34,7 @@ _Note:_ Since the kafka is running on the same host --network="host" is used. Re
 
 
 
-### Alternate approach
+### Alternativ approach
 
 The project is developed using pyCharm. Therfore it can be imported and directly run from the pyCharm. The environment 
 variables `TOPIC` and `KAFKA_BROKERS` must be set before running consumer and producer separately.
