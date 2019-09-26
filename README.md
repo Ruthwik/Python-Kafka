@@ -20,13 +20,17 @@ Follow the instructions below to configure your local machine to run and develop
 
 ##### Run the consumer 
 * Go to consumer directory 
-* Build the docker image `sudo docker build -t python-kafka-consumer .`
-* Run the docker image `sudo docker run --network="host" -it --rm --name kafka-consumer --env TOPIC="topic-kafka" --env KAFKA_BROKERS="localhost:9092" <<consumer_docker_image>>`
+* Build the docker image 
+> sudo docker build -t python-kafka-consumer
+* Run the docker image 
+> sudo docker run --network="host" -it --rm --name kafka-consumer --env TOPIC="topic-kafka" --env KAFKA_BROKERS="localhost:9092" <<consumer_docker_image>>
 
 ##### Run the Producer 
 * Go to producer directory 
-* Build the docker image `sudo docker build -t python-kafka-producer .`
-* Run the docker image `sudo docker run --network="host" -it --rm --name kafka-producer --env TOPIC="topic-kafka" --env KAFKA_BROKERS="localhost:9092" <<producer_docker_image>>`
+* Build the docker image 
+> sudo docker build -t python-kafka-producer
+* Run the docker image 
+> sudo docker run --network="host" -it --rm --name kafka-producer --env TOPIC="topic-kafka" --env KAFKA_BROKERS="localhost:9092" <<producer_docker_image>>
 
 
 
@@ -34,7 +38,7 @@ _Note:_ Since the kafka is running on the same host --network="host" is used. Re
 
 
 
-### Alternativ approach
+### Alternative approach
 
 The project is developed using pyCharm. Therfore it can be imported and directly run from the pyCharm. The environment 
 variables `TOPIC` and `KAFKA_BROKERS` must be set before running consumer and producer separately.
